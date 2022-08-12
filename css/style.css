@@ -23,7 +23,10 @@ html, body{
 }
 .contents{
     position: absolute;
-    top: 0;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: -235px;
     z-index: 20;
     color: white;
     font-weight: bold;
@@ -32,18 +35,29 @@ html, body{
 }
 .contents_name{
     font-size: 46px;
+    margin-bottom: 20px;
 }
 .contents_intro{
     font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+.contents_menu{
+    margin-left: -35px
 }
 .menu_list > li {
-    font-size: 25px;
     display: inline-block;
     border: 2px solid white;
-    border-radius: 30%;
+    border-redius: 20%;
+    font-size: 25px;
     width : 50px;
     height: 50px;
+    mergin-right: 10px;
 }
-.menu_list > li > a {
-    color: inherit;
+.menu_list > li > a >i >p{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    
 }
