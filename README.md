@@ -28,12 +28,15 @@ fully conneted layer는 사용하지 않으며 이미지 합성을 위해 max po
 content image에 대한 학습을 위해 원본 이미지와 생성된 이미지 간 MSE LOSS활용하였으며, input image의 style 표현을 획득하기 위해서 feature space의 정보를 활용할 필요가 있으므로 Gram matrix를 활용했다.
 Gram matrices를 활용하여 원본이미지와 생성된 이미지간의 mean-squared distance를 최소화하는 방향으로 Loss를 구성했다.
 size의 크기는 항상 같게 하기 위해 style image와 content image를 resize했다.
+
 ![](https://velog.velcdn.com/images%2Fgoe87088%2Fpost%2F1789ccb3-8855-46bd-a971-725d32c3939b%2Fimage.png)
 
 5.검증
 
 photograph A를 content로 하고 여러 painting에 대해 style transfer를 진행한 결과이다.
+
 ![](https://velog.velcdn.com/images%2Fgoe87088%2Fpost%2F96b92221-c1b3-4255-bc8a-95fd72b494b1%2Fimage.png)
+
 CNN을 이용해 content와 style의 representation을 잘 분리 가능하였으며, network의 high layer에서 style representation을 얻는 것이 더좋다.
 본 논문에서는 다섯개(최대) layer에서 style feature을 얻었으며, network의 high level에서 style과 content가 적절하게 merge가 된다.
 
