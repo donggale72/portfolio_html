@@ -13,7 +13,7 @@ WaveNet이 인간의 목소리를 모방하여 현존하는 최고의 TTS(Text-t
 하는것이 목적이다.
 
 
-![](https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b13d0dea8074a97b55c_unnamed.gif)
+          ![](https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b13d0dea8074a97b55c_unnamed.gif)
 
 3. 필요성
 
@@ -29,7 +29,7 @@ WaveNet의 조건부 확률 분포는 컨볼루션 레이어 스택으로 모델
 훈련 시간에 모든 시간 단계에 대한 조건부 예측은 ground truth x의 모든 시간 단계가 알려져 있기 때문에 병렬로 이루어져 있으며,
 모델을 생성할 때 예측은 순차적으로 각 샘플이 예측된 후 네트워크에 피드백되어 다음 샘플을 예측하도록 하였다.
 
-![](https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b1d1dd26da452c9e160_unnamed-2.gif)
+           ![](https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b1d1dd26da452c9e160_unnamed-2.gif)
 
 인과 관계 컨볼루션이 있는 모델은 매우 긴 시퀀스에 적용될 때 일반적으로 RNN보다 학습 속도가 더 빠르며, 인과관계 컨볼루션의 문제 중 하나는 
 수용 필드를 증가시키기 위해서는 많은 레이어 또는 큰 필터가 필요하다. <br>
