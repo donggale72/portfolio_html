@@ -38,7 +38,7 @@ photograph A를 content로 하고 여러 painting에 대해 style transfer를 �
 <p align="center">
   <img src="https://velog.velcdn.com/images%2Fgoe87088%2Fpost%2F96b92221-c1b3-4255-bc8a-95fd72b494b1%2Fimage.png">
 </p>
-![](https://velog.velcdn.com/images%2Fgoe87088%2Fpost%2F96b92221-c1b3-4255-bc8a-95fd72b494b1%2Fimage.png)
+
 
 CNN을 이용해 content와 style의 representation을 잘 분리 가능하였으며, network의 high layer에서 style representation을 얻는 것이 더좋다.<br>
 본 논문에서는 다섯개(최대) layer에서 style feature을 얻었으며, network의 high level에서 style과 content가 적절하게 merge가 된다.
