@@ -12,7 +12,7 @@ WaveNet이 인간의 목소리를 모방하여 현존하는 최고의 TTS(Text-t
 이에 본 논문은 원시 오디오 생성에있어 시계열적 자기회귀를 처리하기 위해 확장된 인과 관계 컨불루션을 기반으로 하는 새로운 아키텍처를 개발 
 하는것이 목적이다.
 
-![](https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b13d0dea8074a97b55c_unnamed.gif)
+![](https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b13d0dea8074a97b55c_unnamed.gif? raw=True)
 
 3. 필요성
 
