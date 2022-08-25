@@ -35,6 +35,7 @@ size의 크기는 항상 같게 하기 위해 style image와 content image를 re
 
 photograph A를 content로 하고 여러 painting에 대해 style transfer를 진행한 결과이다.
 
+<o align="center"><img src="https://velog.velcdn.com/images%2Fgoe87088%2Fpost%2F96b92221-c1b3-4255-bc8a-95fd72b494b1%2Fimage.png"></p>
 ![](https://velog.velcdn.com/images%2Fgoe87088%2Fpost%2F96b92221-c1b3-4255-bc8a-95fd72b494b1%2Fimage.png)
 
 CNN을 이용해 content와 style의 representation을 잘 분리 가능하였으며, network의 high layer에서 style representation을 얻는 것이 더좋다.<br>
