@@ -1,3 +1,6 @@
+#           WaveNet: A Generative Model for Raw Audio
+
+
 ## 1. 배경
 
 본 논문은 오디오와 텍스트를 컨블루션 네트워크를 사용하여 결합확률로 새롭게 원시 오디오를 생성한다.
