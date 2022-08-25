@@ -15,7 +15,7 @@ WaveNet이 인간의 목소리를 모방하여 현존하는 최고의 TTS(Text-t
 이에 본 논문은 원시 오디오 생성에있어 시계열적 자기회귀를 처리하기 위해 확장된 인과 관계 컨불루션을 기반으로 하는 새로운 아키텍처를 개발 
 하는것이 목적이다.
 
-<p align="senter">
+<p align="center">
 <img_src="https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b13d0dea8074a97b55c_unnamed.gif">
 </p>
 
@@ -32,7 +32,7 @@ WaveNet의 조건부 확률 분포는 컨볼루션 레이어 스택으로 모델
 갖도록 하였다.<br>
 훈련 시간에 모든 시간 단계에 대한 조건부 예측은 ground truth x의 모든 시간 단계가 알려져 있기 때문에 병렬로 이루어져 있으며,
 모델을 생성할 때 예측은 순차적으로 각 샘플이 예측된 후 네트워크에 피드백되어 다음 샘플을 예측하도록 하였다.
-<p align="senter">
+<p align="center">
 <img_src="https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b1d1dd26da452c9e160_unnamed-2.gif">
 </p>
 
