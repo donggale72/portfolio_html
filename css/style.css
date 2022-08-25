@@ -1,63 +1,152 @@
-html, body{
-    width : 100%;
-    height : 100%;
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.bkg{
-    width : 100%;
-    height : 100%;
-    background-image: url("../imges/img.png") ;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0; 
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html, body{
+    width:100%;
+    height: 100%; 
+}
+
+body {
     
-}
-.grid_dot{
-    width : 100%;
-    height : 100%;
-    background-image: url("../imges/dot_small.png");
-    position: absolute;
-    top: 0;
-    z-index: 10;
-}
-.contents{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -225px;
-    margin-top: -235px;
-    z-index: 20;
+    font-family: 'GmarketSansMedium';
+    background-color: #52BE80 ;
     color: white;
-    font-weight: bold;
-    text-align: center;
-    font-family: sans-serif;
-}
-.contents_name{
-    font-size: 46px;
-    margin-bottom: 20px;
-}
-.contents_intro{
-    font-size: 26px;
-    margin-top: 0px;
-    margin-bottom: 80px;
-}
-.contents_menu{
-    margin-left: -35px
-}
-.menu_list > li {
-    display: inline-block;
-    border: 2px solid white;
-    border-redius: 20%;
-    font-size: 25px;
-    width : 50px;
-    height: 50px;
-    mergin-right: 10px;
-}
-.menu_list > li > a >i >p{
-    font-size: 15px;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-top: 10px;
+    
     
 }
+
+/*body - section(contents) - div (wrapper) - div(5) 
+*/
+
+#contents{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+
+.title .clock_img {
+    position: relative;
+    width: 265px;
+    height: 265px;    
+}
+
+.title .title_img{
+    position: absolute;
+    margin-top: 80px;
+}
+
+.title .title_img img{
+    width: 600px;
+    height: auto;
+}
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.intro .intro_saying{
+    color: #F5DF4D;
+    font-family: 'OTEnjoystoriesBA'; 
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.intro .intro_explain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro .quotes{
+    position: relative;
+    padding-top:20px; 
+}
+
+.intro .intro_explain p{
+    position: absolute;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-left: 62px;
+}
+
+.intro .intro_explain span{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 25px
+    
+}
+
+
+.inputs .inputs_field{
+    display: flex;
+    padding: 20px;
+}
+
+.inputs .inputs_time{
+    
+    display: flex;
+    padding: 20px;
+
+}
+
+.inputs input{
+    
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin: -20px 20px 20px 20px;
+    padding: 15px 10px 10px 10px;
+    
+    border: none;
+    
+}
+
+.inputs input::placeholder {
+    
+    color: lightgray;
+    font-size: 26px;
+    font-family: GmarketSansMedium;
+}
+
