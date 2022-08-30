@@ -30,7 +30,12 @@ CNN의 역사는 오래 되었지만 사용가능한 데이터가 극히 제한�
 본 연구에서는 FCN을 수정 확장하였으며 주요 아이디어로는 풀링 연산자가 Up-sampling 연산으로 대체되는 연속적인 계층으로 네트워크를 구성하였다.
 U-Net은 이미지의 전반적인 컨텍스트 정보를 얻기 위한 네트워크와 정확한 지역화(Localization)를 위한 네트워크가 대칭 형태로 구성되어 있다.
 Expanding Path의 경우 Contracting Path의 최종 특징 맵으로부터 보다 높은 해상도의 Segmentation 결과를 얻기 위해 몇 차례의 Up-sampling을 진행한다.
-다시 말해, Coarse Map에서 Dense Prediction을 얻기 위한 구조이다.                                                           Coarse Map to Dense Map 개념 뿐만 아니라 U-Net은 FCN의 Skip Architecture 개념도 활용하여 얕은 층의 특징맵을 깊은 층의 특징맵과 결합하는 방식을 제안하였다.                      
+다시 말해, Coarse Map에서 Dense Prediction을 얻기 위한 구조이다.     
+<p align="center">
+<img src="[https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b13d0dea8074a97b55c_unnamed.gif](https://kuklife.tistory.com/119)">
+</p>
+
+Coarse Map to Dense Map 개념 뿐만 아니라 U-Net은 FCN의 Skip Architecture 개념도 활용하여 얕은 층의 특징맵을 깊은 층의 특징맵과 결합하는 방식을 제안하였다.                      
 이러한 CNN 네트워크의 Feature hierarchy의 결합을 통해 Segmentation이 내제하는 Localization과 Context(Semantic Information) 사이의 트레이드 오프를 해결할 수 있다. 
 수축형태와 팽창형태의 네트워크 구성 구조를 다음과 같이 편성하였다.  
  
