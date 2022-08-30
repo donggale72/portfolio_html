@@ -39,21 +39,21 @@ Expanding Path의 경우 Contracting Path의 최종 특징 맵으로부터 보�
 Coarse Map to Dense Map 개념 뿐만 아니라 U-Net은 FCN의 Skip Architecture 개념도 활용하여 얕은 층의 특징맵을 깊은 층의 특징맵과 결합하는 방식을 제안하였다.<br>              이러한 CNN 네트워크의 Feature hierarchy의 결합을 통해 Segmentation이 내제하는 Localization과 Context(Semantic Information) 사이의 트레이드 오프를 해결할 수 있다.<br> 
 수축형태와 팽창형태의 네트워크 구성 구조를 다음과 같이 편성하였다.  
  
- The Contracting Path
-3x3 convolutions을 두 차례씩 반복 (패딩 없음)
-활성화 함수는 ReLU
-2x2 max-pooling (stride: 2)
-Down-sampling 마다 채널의 수를 2배로 늘림
+ The Contracting Path<br>
+3x3 convolutions을 두 차례씩 반복 (패딩 없음)<br>
+활성화 함수는 ReLU<br>
+2x2 max-pooling (stride: 2)<br>
+Down-sampling 마다 채널의 수를 2배로 늘림<br>
 
 Expanding Path는 Contracting Path과 반대의 연산으로 특징맵을 확장한다.
 
-The Expanding Path
-2x2 convolution (“up-convolution”)
-3x3 convolutions을 두 차례씩 반복 (패딩 없음)
-Up-Conv를 통한 Up-sampling 마다 채널의 수를 반으로 줄임
-활성화 함수는 ReLU
-Up-Conv 된 특징맵은 Contracting path의 테두리가 Cropped된 특징맵과 concatenation 함
-마지막 레이어에 1x1 convolution 연산
+The Expanding Path<br>
+2x2 convolution (“up-convolution”)<br>
+3x3 convolutions을 두 차례씩 반복 (패딩 없음)<br>
+Up-Conv를 통한 Up-sampling 마다 채널의 수를 반으로 줄임<br>
+활성화 함수는 ReLU<br>
+Up-Conv 된 특징맵은 Contracting path의 테두리가 Cropped된 특징맵과 concatenation 함<br>
+마지막 레이어에 1x1 convolution 연산<br>
 
 위와 같은 구성으로 U-Net은 총 23-Layers Fully Convolutional Networks 구조이다.<br>
 주목해야 하는 점은 최종 출력인 Segmentation map의 크기는 Input Image 크기보다 작다는 것이다.<br> 
