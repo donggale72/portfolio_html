@@ -44,7 +44,7 @@ Latent space는 말 그대로 어떤 숨겨진 vector들을 말한다. 이 laten
 선택된 은닉 유닛의 수는 자동 인코더에 대한 이전 문헌을 기반으로 하며 다른 알고리즘의 상대적 성능은 이러한 선택에 그다지 민감하지 않았다.<br>
 
 <p align="center">
-  <img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-08-29%20171801.jpg>
+  <img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-08-29%20171801.jpg style="width:200px; height:150px;"/>
   </p>
 
 그림은 하한을 비교할 때의 결과를 보여준다. 흥미롭게도, 불필요한 잠복 변수는 과적합을 일으키지 않
