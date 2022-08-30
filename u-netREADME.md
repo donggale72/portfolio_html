@@ -32,7 +32,7 @@ U-Net은 이미지의 전반적인 컨텍스트 정보를 얻기 위한 네트�
 Expanding Path의 경우 Contracting Path의 최종 특징 맵으로부터 보다 높은 해상도의 Segmentation 결과를 얻기 위해 몇 차례의 Up-sampling을 진행한다.
 다시 말해, Coarse Map에서 Dense Prediction을 얻기 위한 구조이다.     
 <p align="center">
-<img src="[https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b13d0dea8074a97b55c_unnamed.gif](https://kuklife.tistory.com/119)">
+<img src="https://production-media.paperswithcode.com/methods/Screen_Shot_2020-07-07_at_9.08.00_PM_rpNArED.png">
 </p>
 
 Coarse Map to Dense Map 개념 뿐만 아니라 U-Net은 FCN의 Skip Architecture 개념도 활용하여 얕은 층의 특징맵을 깊은 층의 특징맵과 결합하는 방식을 제안하였다.                      
