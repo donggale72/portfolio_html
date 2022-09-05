@@ -26,7 +26,7 @@ self-Attention 모델이전 대부분의 자연어 처리는 encoder-decoder 구
 
 ## 4 실험설계
 
-
+<><img=http://jalammar.github.io/images/t/transformer_resideual_layer_norm_3.png>
 
 
 ## 5 검증
