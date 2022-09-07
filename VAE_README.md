@@ -58,4 +58,4 @@ Latent space는 말 그대로 어떤 숨겨진 vector들을 말한다. 이 laten
 
 Generative Model을 통해 적은 data를 가지고 원래 data가 가지는 분포를 꽤 가깝게 근사하고 이를 통해 새로운 data를 생성해낼 수 있다는 점과
 Latent variable의 분포를 가정해 sampling 할 값들의 분포를 control 할 수 있게 되고, manifold도 잘 학습이 되었다.<br>
-이는 data의 특징들도 잘 알 수 있고, 그 특징들의 분포들은 크게 벗어나지 않게 control 하면서 그 속에서 새로운 값을 만들 수 있음을 보여준다
+이는 data의 특징들도 잘 알 수 있고, 그 특징들의 분포들은 크게 벗어나지 않게 control 하면서 그 속에서 새로운 값을 만들 수 있음을 보여준다.
