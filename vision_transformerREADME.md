@@ -57,6 +57,10 @@ grad clipping 적용
 <p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20123452.jpg style="width: 800px; heigth:500px;"/>
   </p>
 
+
+<p align="center"><img src= style="width: 800px; heigth: 500px">
+
+
 ## 6 결 론
 
 트랜스포머 구조가 자연어 처리 task들에서 사실상 표준이 되는 동안, 비전에 이를 적용한 사례는 한정되어왔다. 
