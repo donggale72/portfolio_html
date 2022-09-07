@@ -52,8 +52,8 @@ Sublayer(x) : sublayer에서 입출력 dimension은 d_{model} = 512 <br>
 
 Encoder도 Decoder와 같이 6개의 동일한 층으로 구성된다.<br>
 Encoder와 다르게 총 3개의 sub-layer을 갖고 있음 → 2개는 기존의 Encoder의 sub-layer와 동일 + 1개는 Encoder의 ouput에 대해 Multi-head Attention을 계산하는 sub-layer이다.<br>
-따라서, Decoder은 Encoder 구조 + 뒤에 오는 단어를 미리 알지 못하게(앞에 있는, 아는 단어로만 예측했다고 확실히 하기 위해서) 마스킹한 Attention layer을 갖고 있다.<br>
-Encoder과 비슷하게 Residual Connection & Layer Normalization이 각 sub-layer의 정규화 layer 뒤에 있음<br>
+따라서, Decoder은 Encoder 구조 뒤에 오는 단어를 미리 알지 못하게(앞에 있는, 아는 단어로만 예측했다고 확실히 하기 위해서) 마스킹한 Attention layer을 갖고 있다.<br>
+Encoder과 비슷하게 Residual Connection & Layer Normalization이 각 sub-layer의 정규화 layer 뒤에 있다<br>
 
 ### Attention
 
