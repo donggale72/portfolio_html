@@ -86,5 +86,7 @@ Transformer을 이용함으로써 학습 효율은 높고 성능은 더욱 개�
 
 ## 6 결론
 
-기존의 RNN 모델의 한계를 탈피하고자 병렬처리가 가능한 Transformer를 제안하였다.<br>
-Transformer는 병렬처리가 가능하여 빠르며, 정보손실을 어느정도 보완이 가능하여  정확하게 data를 처리할 수 있었다.
+Transformer는 recurrence와 convolution을 모두 제거한, 오직 Attention에만 의존하는 새로운 종류의 모델이다.<br> 
+기계번역 태스크 이외에 다른 NLP 태스크에서도 기존 RNN이나 CNN을 사용하는 모델보다 훨씬 학습 효율이 높을 뿐더러 성능이 높다.<br>
+따라서 본 논문에서는 기존의 RNN 모델의 한계를 탈피하고자 병렬처리가 가능한 Transformer를 제안하였다.<br>
+Transformer는 병렬처리가 가능하여 빠르며, 정보손실을 어느정도 보완이 가능하여  정확하게 data를 처리할 수 있으며 성능 또한 높음을 알수 있다.
