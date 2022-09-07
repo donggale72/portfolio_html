@@ -57,13 +57,13 @@ grad clipping 적용<br>
 ## 5 검 증
 
 테스트는 ViT-Base, Vit-Large, Vit-Huge 3가지 모델에 대하여 진행하였다. 아래 표의 /14, /16은 패치 크기를 나타낸다.<br>
-두번째 표에서 성능을 살펴보면 CNN 모델에 비해 성능이 좋다는 것을 보여주고자 합니다. 특히, 학습 시간도 절약한 것이 인상적이다.<br> 
+두번째 표에서 성능을 살펴보면 CNN 모델에 비해 성능이 좋았으며 특히, 학습 시간도 절약한 것이 인상적이다.<br> 
 
 <p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20123452.jpg style="width: 800px; heigth:500px;"/>
   </p>
 
 데이터의 특성에 따라 정확도가 달라질 수 있기 때문에, 여러 데이터의 유사한 종류의 데이터를 묶어서 성능을 비교하였다.<br>
-이 때에도 ViT의 성능이 좋은 점을 보여주고자 하였다.<br>
+이 때에도 ViT의 성능이 좋은 점을 보여준다.<br>
 
 <p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20123518.jpg style="width: 800px; heigth: 500px">
   </p>
