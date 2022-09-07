@@ -74,7 +74,7 @@ Value = 각 단어의 값 <br>
 - WMT 2014 English-to-French Translation task -> 41.0 BLEU<br>
 
 
-<p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20142746.jpg     style="width: 500px; heigth: 500px"/>
+<p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20142746.jpg     style="width: 800px; heigth: 500px"/>
   </p>
   
 WMT 2014 English-to-German translation 태스크와 English-to-French translation 태스크에서 이전 SOTA 모델을 능가하는 성능을 기록했다.<br> 
