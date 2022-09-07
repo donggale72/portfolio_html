@@ -35,7 +35,7 @@ self-Attention 모델이전 대부분의 자연어 처리는 encoder-decoder 구
 1. self-attention
 2. position-wise feed forward network 이다.<br>
 encoder는 구조가 6개로 쌓여져 있으며, 2개의 sub-layer가 존재하며, 각 layer 이후에는 정규화를 해 주었다.<br>
-decoder는 구조가 6개로 크게 3개의 sub-layer가 존재한다.
+decoder는 구조가 6개로 크게 3개의 sub-layer가 존재한다.<br>
 여기서 encoder와 틀린점은 masked을 사용하였는데 이는 self-attention시 자신의 처리 이후 단어는 볼수 없도록 하여 self-attention되는 것을 막기 위함이다.
 
 
