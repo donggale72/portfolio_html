@@ -62,6 +62,8 @@ grad clipping 적용<br>
 <p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20123452.jpg style="width: 800px; heigth:500px;"/>
   </p>
 
+ImageNet과 같은 중간 사이즈의 데이터셋에서 학습했을 때, 모델은 ResNet보다 약간 낮은 수치의 정확도를 보여줬는데, 이는 트랜스포머가 CNN에 내재되어 있는 inductive biases(translation equivariance and locality)가 부족함을 의미한다.<br>
+이 때문에 중간 사이즈의 데이터셋은 이 모델을 학습시키기에 충분하지가 않음을 알 수 있다.<br>
 데이터의 특성에 따라 정확도가 달라질 수 있기 때문에, 여러 데이터의 유사한 종류의 데이터를 묶어서 성능을 비교하였다.<br>
 이 때에도 ViT의 성능이 좋은 점을 보여준다.<br>
 
