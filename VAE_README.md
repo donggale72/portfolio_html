@@ -33,7 +33,7 @@ Decoder는 encoder와 반대로 latent space를 input으로 변환하는 역할�
 Latent space는 말 그대로 어떤 숨겨진 vector들을 말한다. 이 latent space가 주어져야, decoder는 이를 활용해 data를 generate할 수 있다.<br> 
 만약 여기서, VAE가 autoencoder처럼 input과 output을 똑같이 만드는 것을 목적으로 한다면 이 목적으로 만들어진 latent space는 항상 input과 같은 모양의 데이터를 만들어낼 수밖에 없을 것이다.<br>
 <p align="center">
-  <img src=https://github.com/donggale72/webtest_html/blob/main/imges/vae1.jpg style="width:1000px; height:500px;"/>
+  <img src=https://github.com/donggale72/webtest_html/blob/main/imges/vae.jpg style="width:1000px; height:500px;"/>
 
 이를 방지하기 위해 noise를 sampling하여 이로부터 latent space를 만든다.<br> 
 예를 들어, 어떤 표준 정규분포 (평균이 0이고 표준편차가 1인 정규분포)로부터 하나의 noise epsilon을 샘플링하여 얻고, 이에 encoder로부터 얻은 분산을 곱하고 평균을 더해서 latent vector z를 얻는 것이다. 이를 reparametrization trick이라고 부른다.<br>
