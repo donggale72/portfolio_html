@@ -64,8 +64,8 @@ grad clipping 적용<br>
 
 ImageNet과 같은 중간 사이즈의 데이터셋에서 학습했을 때, 모델은 ResNet보다 약간 낮은 수치의 정확도를 보여줬는데, 이는 트랜스포머가 CNN에 내재되어 있는 inductive biases(translation equivariance and locality)가 부족함을 의미한다.<br>
 이 때문에 중간 사이즈의 데이터셋은 이 모델을 학습시키기에 충분하지가 않음을 알 수 있다.<br>
-데이터의 특성에 따라 정확도가 달라질 수 있기 때문에, 여러 데이터의 유사한 종류의 데이터를 묶어서 성능을 비교하였다.<br>
-이 때에도 ViT의 성능이 좋은 점을 보여준다.<br>
+그것은 데이터의 특성에 따라 정확도가 달라질 수 있기 때문에, 여러 데이터의 유사한 종류의 데이터를 묶어서 성능을 비교하였다.<br>
+이 때에도 ViT의 성능이 더좋은 것을 알 수있다.<br>
 
 <p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20123518.jpg style="width: 800px; heigth: 500px">
   </p>
@@ -75,6 +75,6 @@ ImageNet과 같은 중간 사이즈의 데이터셋에서 학습했을 때, 모�
 ## 6 결 론
 
 트랜스포머 구조가 자연어 처리 task들에서 사실상 표준이 되는 동안, 비전에 이를 적용한 사례는 한정되어왔다. <br>
-비전 분야에서 어텐션은 Convolutional network과 함께 적용되거나, Convolutional network의 특정 요소를 대체하기 위해 사용되었기 때문이다.<br>
-본 논문에서는 이러한 CNN에 대한 의존이 필요하지 않고 순수 트랜스포머가 곧바로 이미지 패치들에 사용되고 이미지 분류에 잘 작동함을 보여주었다.<br> 
-많은 양의 데이터에서 사전학습되고 여러 중간 사이즈나 작은 사이즈의 이미지 인식 데이터셋(ex. ImageNet, CIFAR-100)으로 전이 학습될 시에 Vision Transformer는 기존의 convolution기반의 SOTA 결과들에 비교해서 계산량은 적으면서도 훌륭한 결과를 보여주었다.
+그것은 비전 분야에서 어텐션은 Convolutional network과 함께 적용되거나, Convolutional network의 특정 요소를 대체하기 위해 사용되었기 때문이다.<br>
+이에 본 논문에서는 이러한 CNN에 대한 의존이 필요하지 않고 순수 트랜스포머가 곧바로 이미지 패치들에 사용되고 이미지 분류에 잘 작동된다는 것을 보여주었다.<br> 
+많은 양의 데이터에서 사전학습되고 여러 중간 사이즈나 작은 사이즈의 이미지 인식 데이터셋(ex. ImageNet, CIFAR-100)으로 전이 학습될 시에 Vision Transformer는 기존의 convolution기반의 SOTA 결과들에 비교해서 계산량은 적으면서도 훌륭한 결과를 보여준다할 수 있다.
