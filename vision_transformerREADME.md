@@ -54,13 +54,19 @@ grad clipping 적용<br>
 
 ## 5 검 증
 
+테스트는 ViT-Base, Vit-Large, Vit-Huge 3가지 모델에 대하여 진행하였습니다. 아래 표의 /14, /16은 패치 크기를 나타낸다.<br>
+두번째 표에서 성능을 살펴보면 CNN 모델에 비해 성능이 좋다는 것을 보여주고자 합니다. 특히, 학습 시간도 절약한 것이 인상적이다.<br> 
+
 <p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20123452.jpg style="width: 800px; heigth:500px;"/>
   </p>
 
+데이터의 특성에 따라 정확도가 달라질 수 있기 때문에, 여러 데이터의 유사한 종류의 데이터를 묶어서 성능을 비교하였다.<br>
+이 때에도 ViT의 성능이 좋은 점을 보여주고자 하였다.<br>
 
 <p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20123518.jpg style="width: 800px; heigth: 500px">
   </p>
 
+위는 VTAB task에 대해 기존의 SOTA와 비교한 그래프인데 ViT-H/14가 모든 task에서 가장 뛰어난 정확도를 보여주는 것을 알 수 있다.<br>
 
 ## 6 결 론
 
@@ -68,20 +74,3 @@ grad clipping 적용<br>
 비전 분야에서 어텐션은 Convolutional network과 함께 적용되거나, Convolutional network의 특정 요소를 대체하기 위해 사용되었기 때문이다.<br>
 본 논문에서는 이러한 CNN에 대한 의존이 필요하지 않고 순수 트랜스포머가 곧바로 이미지 패치들에 사용되고 이미지 분류에 잘 작동함을 보여주었다.<br> 
 많은 양의 데이터에서 사전학습되고 여러 중간 사이즈나 작은 사이즈의 이미지 인식 데이터셋(ex. ImageNet, CIFAR-100)으로 전이 학습될 시에 Vision Transformer는 기존의 convolution기반의 SOTA 결과들에 비교해서 계산량은 적으면서도 훌륭한 결과를 보여주었다.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
