@@ -58,7 +58,8 @@ grad clipping 적용
   </p>
 
 
-<p align="center"><img src= style="width: 800px; heigth: 500px">
+<p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20123518.jpg style="width: 800px; heigth: 500px">
+  </p>
 
 
 ## 6 결 론
