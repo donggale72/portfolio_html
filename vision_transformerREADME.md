@@ -2,7 +2,8 @@
 
 ## 1 배경
 
-Self-attention기반의 구조들은 많이 알려졌듯이 자연어 처리분야에서 많이 사용되어 왔다. 특히 큰 텍스트 코퍼스에서 사전 학습하고 작은 task-specific dataset에서 fine-tuning 하는 BERT와 같은 방식이 우세하다.<br>
+Self-attention기반의 구조들은 많이 알려졌듯이 자연어 처리분야에서 많이 사용되어 왔다. <br>
+특히 큰 텍스트 코퍼스에서 사전 학습하고 작은 task-specific dataset에서 fine-tuning 하는 BERT와 같은 방식이 우세하다.<br>
 하지만, 비전분야에서는 Convolutional 구조가 아직까지 우세하게 사용되고 있다. NLP에서의 성공에 영감을 받아서 다양한 연구에서 CNN 같은 구조를 self-attention과 결합하려고 시도해왔는데, 가장 최근의 모델들은 이론상으로는 효과적이었지만, 특수한 어텐션 패턴 사용 때문에 현대 하드웨어 가속기에서 효과적으로 스케일링이 불가능했다.<br> 
 NLP에서의 트랜스포머 스케일링이 성공한 것에 영감을 받아, 본 논문에서는 standard transformer를 최소한의 수정으로 직접 이미지에 적용하는 것에 대해 실험을 했다
 
