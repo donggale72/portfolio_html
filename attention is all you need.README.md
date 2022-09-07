@@ -28,7 +28,7 @@ self-Attention 모델이전 대부분의 자연어 처리는 encoder-decoder 구
 
 모델구조는 아래의 2개 구조를 합한것과 같다.<br>
 
-<p align="center"><img src=http://jalammar.github.io/images/t/transformer_resideual_layer_norm_3.png style="width: 1000px; height: 500px;"/>
+<p align="center"><img src=http://jalammar.github.io/images/t/transformer_resideual_layer_norm_3.png style="width: 1000px; heigth: 500px;"/>
 </p>
 <br>
 
@@ -38,9 +38,48 @@ encoder는 구조가 6개로 쌓여져 있으며, 2개의 sub-layer가 존재하
 decoder는 구조가 6개로 크게 3개의 sub-layer가 존재한다.<br>
 여기서 encoder와 틀린점은 masked을 사용하였는데 이는 self-attention시 자신의 처리 이후 단어는 볼수 없도록 하여 self-attention되는 것을 막기 위함이다.
 
+### Encoder
+
+인코더는 6개의 동일한 층으로 구성된다. <br>
+각 층은 2개의 sub-layer이 있으며 1번째는 multi-head self-attention mechanism이고 2번째는 pointwise fully-connected 순전파 네트워크이다.<br>
+각 단어의 위치 정보를 인코딩해서 임베딩 출력 값과 합체 → inputMulti-Head attention: self-attention을 병렬적으로 사용<br>
+Encoder의 전체적 flow : Multi-Head self-Attention 도착해서 Attention 수행 → Residual Connection & Layer → Normalization → Feed-Forward 도착 → Residual Connection & Layer Normalization → output 이 과정을 6번 반복한다.<br>
+각 sublayer의 결과 값 = LayerNorm(x+Sublayer(x))<br>
+Sublayer(x) : sublayer에서 입출력 dimension은 d_{model} = 512 <br>
+(임베딩 벡터의 차원과 Sublayer의 출력 벡터 차원이 같아야 하므로 본 논문에서는 512 차원으로 통일)<br>
+
+### Decoder
+
+Encoder도 Decoder와 같이 6개의 동일한 층으로 구성된다.<br>
+Encoder와 다르게 총 3개의 sub-layer을 갖고 있음 → 2개는 기존의 Encoder의 sub-layer와 동일 + 1개는 Encoder의 ouput에 대해 Multi-head Attention을 계산하는 sub-layer이다.<br>
+따라서, Decoder은 Encoder 구조 + 뒤에 오는 단어를 미리 알지 못하게(앞에 있는, 아는 단어로만 예측했다고 확실히 하기 위해서) 마스킹한 Attention layer을 갖고 있다.<br>
+Encoder과 비슷하게 Residual Connection & Layer Normalization이 각 sub-layer의 정규화 layer 뒤에 있음<br>
+
+### Attention
+
+Attention에는 Query, Key, Value 벡터가 있다.<br>
+출력은 이 3가지 벡터의 가중치 합으로 나타난다. <br>
+Query = 값을 구하고자 하는 단어 <br>
+Key = 해당 문장에서 추출된 단어<br>
+Value = 각 단어의 값 <br>
+
 
 ## 5 검증
 
+모델의 성능은 2개의 Task에 대해 각각 아래와 같이 달성했다고 한다.<br> 
+논문이 나온 시점에서 최고 수준의 성능을 보여주었다.<br>
+
+- WMT 2014 English-to-German Translation task ->  28.4 BLEU<br>
+
+- WMT 2014 English-to-French Translation task -> 41.0 BLEU<br>
+
+
+<p align="center"><img src=     style="width: 500px; heigth: 500px"/>
+  </p>
+  
+WMT 2014 English-to-German translation 태스크와 English-to-French translation 태스크에서 이전 SOTA 모델을 능가하는 성능을 기록했다.<br> 
+Transformer을 이용함으로써 학습 효율은 높고 성능은 더욱 개선되었음을 알 수 있다.
+기계번역 태스크 이외에도 구문 분석과 같은 다른 NLP 태스크에 적용해본 결과, 별도의 미세 조정 없이도 SOTA 결과를 보임을 알 수 있었다.<br> 
 
 
 
