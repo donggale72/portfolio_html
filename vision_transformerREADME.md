@@ -30,7 +30,7 @@ Vision Transformer를 학습할 때, 다음과 같은 방식을 사용하였다.
 ⑤ ImageNet, CIFAR10/100, 9-task VTAB 등 데이터셋에 대해 transfer learning을 진행
 
 <p align="center">
-<img src=https://production-media.paperswithcode.com/methods/Screen_Shot_2021-01-26_at_9.43.31_PM_uI4jjMq.png style="width: 1000px; heigth: 800px;"/>
+<img src=https://production-media.paperswithcode.com/methods/Screen_Shot_2021-01-26_at_9.43.31_PM_uI4jjMq.png style="width: 800px; heigth: 500px;"/>
   </p>
 
 사전 학습 조건은 다음과 같다.
@@ -54,7 +54,7 @@ grad clipping 적용
 
 ## 5 검 증
 
-<p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20123452.jpg style="width: 500px; heigth:500px;"/>
+<p align="center"><img src=https://github.com/donggale72/webtest_html/blob/main/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-09-07%20123452.jpg style="width: 800px; heigth:500px;"/>
   </p>
 
 ## 6 결 론
