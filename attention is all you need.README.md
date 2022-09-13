@@ -62,6 +62,7 @@ Attention에는 Query, Key, Value 벡터가 있다.<br>
 Query = 값을 구하고자 하는 단어 <br>
 Key = 해당 문장에서 추출된 단어<br>
 Value = 각 단어의 값 <br>
+으로 구조화 하였다.
 
 
 ## 5 검증
