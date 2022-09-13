@@ -27,7 +27,7 @@ decoder라 불리는 뉴럴네트워크는 encoder가 만든 z를 활용해 x를
 ## 4. 실험설계
 
 데이터는 MNIST와Frey Face을 사용하였으며, MNIST의 경우 500개의 은닉 유닛을 갖고 Frey Face 데이터 세트의 경우 200개의 은닉 유닛을 갖는 생성 모델(디코더) 및 해당 인코더(일명 인식 모델)를 훈련했다.<br>
-VAE는 데이터가 생성되는 과정, 즉 데이터의 확률분포를 학습하기 위한 두 개의 뉴럴네트워크로 구성되어 있습니다. VAE는 잠재변수(latent variable) z를 가정하고 있는데, 우선 encoder라 불리는 뉴럴네트워크는 관측된 데이터 x를 받아서 잠재변수 z를 만들어 내며, decoder라 불리는 뉴럴네트워크는 encoder가 만든 z를 활용해 x를 복원해내는 역할을 한다<br>
+VAE는 데이터가 생성되는 과정, 즉 데이터의 확률분포를 학습하기 위한 두 개의 뉴럴네트워크로 구성되어 있다. <br> VAE는 잠재변수(latent variable) z를 가정하고 있는데, 우선 encoder라 불리는 뉴럴네트워크는 관측된 데이터 x를 받아서 잠재변수 z를 만들어 내며, decoder라 불리는 뉴럴네트워크는 encoder가 만든 z를 활용해 x를 복원해내는 역할을 한다<br>
 Encoder는 input을 latent space로 변환하는 역할을 한다. 이 때, encoder는 input 데이터의 posterior, 달리 말하면 input x가 주어졌을 때 latent vector z의 분포, 즉  q(z|x)를 approximate하는 것이다. 여기서 이 q(z|x)를 가장 잘 나타내는 분포로 정규분포(예시)를 선택한다면, q(z|x)를 approximate할 때는 이 정규분포를 나타내는 평균(mu)과 표준편차(sigma)의 parameter를 찾는 것이 될 것이다.<br>
 Decoder는 encoder와 반대로 latent space를 input으로 변환하는 역할을 한다. 이 때, decoder는 input의 true distribution, 달리 말하면 latent vector z가 주어졌을 때 x의 분포,  p(z|x)를 approximate하는 것이다. 어떤 z라는 vector가 주어짐에 따라 다시 데이터 x를 generate하는 역할을 하기 때문에, decoder가 generative model의 역할을 하게 된다.<br>
 Latent space는 말 그대로 어떤 숨겨진 vector들을 말한다. 이 latent space가 주어져야, decoder는 이를 활용해 data를 generate할 수 있다.<br> 
